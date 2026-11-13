@@ -1,0 +1,6 @@
+{
+  "name": "Preclinic - Clinic Management System",
+  "description": "Complete multi-role Clinic Management System frontend built with React 18, Vite, and Bootstrap 5 connecting to a Django REST Framework backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
