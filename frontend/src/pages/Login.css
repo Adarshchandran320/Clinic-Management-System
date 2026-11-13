@@ -1,0 +1,187 @@
+/* Scoped styles for Preclinic CMS Login Page */
+
+.login-portal-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  font-family: inherit;
+}
+
+.login-portal-wrapper {
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* Brand Icon */
+.login-brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background-color: #3fa66b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(63, 166, 107, 0.25);
+  flex-shrink: 0;
+}
+
+/* Form column sizing */
+.login-form-wrapper {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Rounded Pill Inputs */
+.login-input-group {
+  position: relative;
+}
+
+.login-input-group .login-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 1.1rem;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 1.15rem;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.login-input-group .login-input-pill {
+  height: 52px;
+  border-radius: 50rem !important;
+  padding-left: 3rem;
+  padding-right: 1.25rem;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-input-group .login-input-pill:focus {
+  border-color: #3fa66b;
+  box-shadow: 0 0 0 0.25rem rgba(63, 166, 107, 0.2);
+  outline: none;
+}
+
+.login-input-group .login-password-input {
+  padding-right: 3.25rem;
+}
+
+.login-input-group .login-eye-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  transition: color 0.15s ease-in-out;
+}
+
+.login-input-group .login-eye-toggle:hover {
+  color: #475569;
+}
+
+/* Submit Button */
+.login-btn-submit {
+  height: 52px;
+  border-radius: 50rem;
+  background-color: #111827;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 4px 14px rgba(17, 24, 39, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.login-btn-submit:hover:not(:disabled) {
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn-submit:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.login-btn-submit:disabled {
+  background-color: #334155;
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+/* Right Side Branding Card */
+.login-hero-card {
+  background-color: #eaf4ec;
+  border: 1px solid #d1e7dd;
+  border-radius: 28px;
+  min-height: 600px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-illustration-wrapper {
+  max-width: 420px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(63, 166, 107, 0.2);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(63, 166, 107, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.login-illustration-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Divider with text */
+.login-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0 1rem;
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.login-divider::before {
+  margin-right: 0.75rem;
+}
+
+.login-divider::after {
+  margin-left: 0.75rem;
+}
